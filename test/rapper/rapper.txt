@@ -1,0 +1,3 @@
+def read_and_process(*args):    
+    {0}
+    return rap_obj

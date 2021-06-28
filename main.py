@@ -75,7 +75,7 @@ class MainWindow(QMainWindow):
         self.script_file_path, selected_filter = QFileDialog.getOpenFileName(
             self, 'Select .py', script_default_path, 'Python Script(*.py)', options=options)
         subprocess.run("python " + str(self.script_file_path) + " " + self.img_file_path)
-        print("python " + str(self.script_file_path) + " " + str(self.img_file_path))
+        #print("python " + str(self.script_file_path) + " " + str(self.img_file_path))
         # Read
         loaded_array = np.load('tmp.npy')
         h, w = loaded_array.shape[:2]
